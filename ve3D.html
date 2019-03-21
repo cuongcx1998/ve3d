@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+	<script type="text/javascript" src="p5.min.js"></script>
+
+<title>ve3D</title>
+</head>
+
+<body>
+	<script type="text/javascript" charset="utf-8">
+		let param=1;
+		function setup() {
+		  	createCanvas(1080, 720,WEBGL);
+		}
+
+		function draw() {
+		  	background(150);
+			translate(0, 0, 0);
+
+		  	box(100, 220, 10);
+			translate(-135,-270,5);
+			rect(90,180,90,180);
+			translate(128,362,0);
+			ellipse(8,8,16,16);
+			translate(-15,-190,0);
+			rect(15,3,15,3);
+			translate(5,2,0);
+			ellipse(2,2,4,4);
+			translate(15,-7,0);
+			ellipse(2,2,4,4);
+			translate(52,30,-5);
+			box(3,18,3);
+			translate(-100,0,0);
+			box(3,18,3);
+			translate(0,20,0);
+			box(3,18,3);
+			orbitControl();		
+		}
+		/*function mouseWheel(event)
+		{
+			print(event.delta);
+			param += -event.delta /400;
+			return false();
+		}*/
+
+	</script>
+	<input type="button" value="+" align="middle">
+	<input type="button" value="-" align="middle">
+</body>
+</html>
